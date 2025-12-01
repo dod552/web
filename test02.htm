@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>html 두번째 수업</title>
+ </head>
+ <body>
+  <hr>
+  <h1>html 두번째 수업</h1>
+  <hr>
+
+ <h3>풀꽃</h3>
+ <pre><i>                  나태주</i></pre>
+ <p>
+  자세히 보아야 예쁘다 <br>
+  오래 보아야 사랑스럽다 <br>
+  <i><b><mark>너도 그렇다</mark></b></i>
+  <!-- 시작 태그와 종료 태그가 서로 꼬이면 안 됨(감싸듯이)
+   큰 태그가 작은 태그를 감싸는 형태여야 함. -->
+ </p>	
+ <hr>
+ <h3>주석 태그</h3>
+  &lt;!--      --&gt; 
+
+  <hr>
+  <h2>목록 만들기 - List </h2>
+  <ul>
+   <li>순서 없는 목록 - ul </li>
+   <li>순서 있는 목록 - ol</li>
+   <li>정의 목록 - dl</li>
+  </ul>
+  
+ <hr>
+ <h3>1. Unordered List (ul)</h3>
+  <ul>
+   <li>java</li>
+   <li>jsp</li>
+   <li>db</li>
+   <li>web</li> 
+  </ul>
+
+  <ul>
+   <li>coffee</li>
+   <li>milk</li>
+   <li>tea</li>
+   <li>water</li>
+   <li>juice</li>
+  </ul> 
+
+  <hr>
+  <h3>2. Ordered List (ol)</h3>
+  <ol>
+   <li>java</li>
+   <li>jsp</li>
+   <li>db</li>
+   <li>web</li>
+  </ol>
+
+  <ol>
+   <li>coffee</li>
+   <li>milk</li>
+   <li>tea</li>
+   <li>water</li>
+   <li>juice</li>
+  </ol>
+
+  <hr>
+  <h4>ol 앞의 모양 바꾸기 - type="<mark>1</mark>/a/A/i/I" </h4>
+
+  <ol type="1">
+   <li>coffee</li>
+   <li>milk</li>
+   <li>tea</li>
+   <li>water</li>
+   <li>juice</li>
+  </ol>
+
+  <ol type="a">
+   <li>coffee</li>
+   <li>milk</li>
+   <li>tea</li>
+   <li>water</li>
+   <li>juice</li>
+  </ol>
+
+  <ol type="A">
+   <li>coffee</li>
+   <li>milk</li>
+   <li>tea</li>
+   <li>water</li>
+   <li>juice</li>
+  </ol>
+
+  <ol type="i">
+   <li>coffee</li>
+   <li>milk</li>
+   <li>tea</li>
+   <li>water</li>
+   <li>juice</li>
+  </ol>
+
+  <ol type="I">
+   <li>coffee</li>
+   <li>milk</li>
+   <li>tea</li>
+   <li>water</li>
+   <li>juice</li>
+  </ol>
+
+  <hr>
+  <h4>ol의 시작 바꾸기 - start="n"</h4>
+
+  <ol start="100">
+   <li>coffee</li>
+   <li>milk</li>
+   <li>tea</li>
+   <li>water</li>
+   <li>juice</li>
+  </ol>
+
+  <ol start="7" type="A">
+   <li>coffee</li>
+   <li>milk</li>
+   <li>tea</li>
+   <li>water</li>
+   <li>juice</li>
+  </ol>
+
+  <ol type="i" start="6">
+   <li>coffee</li>
+   <li>milk</li>
+   <li>tea</li>
+   <li>water</li>
+   <li>juice</li>
+  </ol>
+
+  <hr>
+  <h3>3. 정의 목록 Description List (dl)</h3>
+  
+   <dl>
+    <dt>html?</dt>
+    <dd>Hyper Text Markup Language의 약자.</dd>
+   </dl>
+   
+   <dl>
+    <dt>css?</dt>
+    <dd>Cascading Style Sheets의 약자.</dd>
+   </dl>
+
+   <dl>
+    <dt>&lt;dl&gt;<dt>
+    <dd>정의 목록을 구성하는 태그</dd>
+    <dt>&lt;dt&gt;</dt>
+    <dd>정의 대상을 지정하는 태그</dd>
+    <dt>&lt;dd&gt;</dt>
+    <dd>정의 내용을 지정하는 태그</dd> 
+   </dl>
+
+   <dl>
+    <dt>html?</dt> 
+    <dd>Hyper Text Markup Language의 약자.</dd>
+    <dd>웹문서를 만드는 표준 언어.</dd>
+    <dd>웹문서의 구조를 담당.</dd>
+   </dl>
+
+
+  <h4>[문제] 자신을 3가지 관점에서 정의 목록 만들기</h4>
+  <dl>
+   <dt><b>김영희</b></dt>
+   <dd>웹표준 담당강사</dd>
+   <dd>월요일 오후 수업 </dd>
+   <dd><i>itreset@daum.net</i></dd>
+  </dl>
+
+  <hr>
+  <h2>하위목록 만들기</h2>
+   <ol>
+    <li>coffee
+     <ul>
+      <li>hot</li>
+      <li>cold</li>
+     </ul>
+    </li>
+    <li>milk</li>
+    <li>tea
+     <ul>
+      <li>hot
+       <ul>
+        <li>green tea</li>
+        <li>red tea</li>
+       </ul> 
+      </li>
+      <li>cold</li>  
+     </ul>
+    </li>
+   </ol>
+
+  <h4>[문제] 하위목록 만들기</h4>
+  <ul>
+   <li>web
+    <ol>
+     <li>html</li>
+     <li>css</li> 
+     <li>js</li> 
+    </ol>
+   </li>
+   <li>java</li>
+  </ul>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
